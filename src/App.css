@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F5F5F5;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-col {
+  min-width: 10rem;
+  min-height: 23rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#name-heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #c58d60;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1, h2, h3, h4 {
+  color: #c58d60
+}
+
+#img {
+  z-index: 5;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+  object-fit: cover;
+}
+
+#circle-1 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 4;
+  background-image: linear-gradient(135deg, #c58d60, #7c675f);
+  box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+}
+
+#circle-2 {
+  height: 325px;
+  width: 325px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  background-image: linear-gradient(135deg,#c58d60, #a09a98);
+  box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+  opacity: .8;
+}
+
+#circle-3 {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  background-image: linear-gradient(135deg, #c58d60, #a09a98);
+  box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+  opacity: .6;
+}
+
+#circle-4 {
+  height: 375px;
+  width: 375px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+  left: -70px;
+  background-image: linear-gradient(135deg, #c58d60, #a09a98);
+  box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+  opacity: .4;
+}
+
+#resume {
+  background-image: linear-gradient(135deg, #ceab8e, #c58d60);
+  border-radius: 5px;
   color: white;
+  font-weight: 300;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#resume:hover {
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  background-image: linear-gradient(135deg, #c58d60, #c58d60);
+  margin: 0 1rem;
+  border: none;
+  border-radius: 20px;
 }
+
+.btn-wide {
+  width: 225px;
+}
+
+.gradient {
+  background-image: linear-gradient(135deg, #dbb99d, #be9c7f);
+}
+
+.btn-up {
+  background-color: transparent;
+  color: "rgba(0,0,0,.9)";
+  border: none;
+}
+
+.gradient img:hover {
+  cursor: pointer;
+}
+
+.gradient #no-cursor:hover {
+  cursor: unset;
+}
+
+audio {
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+.modal-img {
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.scrimba {
+  max-width: 80vw;
+}
+
+
+
