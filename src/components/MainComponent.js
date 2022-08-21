@@ -3,17 +3,17 @@ import React, {useState} from "react"
 import ListOfTech from "./ListOfTechComponent"
 import resume from "../images/AndrewSutton-Resume.pdf"
 
-import honors from "../images/HonorsCertificate.png"
-import frontend from "../images/FrontEnd.png"
-import scrimba from "../images/ScrimbaCert.png"
+// import honors from "../images/HonorsCertificate.png"
+// import frontend from "../images/FrontEnd.png"
+// import scrimba from "../images/ScrimbaCert.png"
 import resumeImg from "../images/AndrewSuttonResume.png"
 import me from "../images/me.jpeg"
-import album from "../images/gallery/Album.jpg"
-import marble from "../images/gallery/Marble.jpg"
-import ellie from "../images/gallery/Ellie.jpg"
-import cover from "../images/gallery/FrontCover.jpg"
-import swings from "../images/gallery/swings.jpg"
-import city from "../images/gallery/City.jpg"
+// import album from "../images/gallery/Album.jpg"
+// import marble from "../images/gallery/Marble.jpg"
+// import ellie from "../images/gallery/Ellie.jpg"
+// import cover from "../images/gallery/FrontCover.jpg"
+// import swings from "../images/gallery/swings.jpg"
+// import city from "../images/gallery/City.jpg"
 
 import { 
     Card,
@@ -21,8 +21,6 @@ import {
     Paper,
     Button,
     Dialog,
-    ImageList,
-    ImageListItem,
     Slide,
     IconButton
  } from '@mui/material'
@@ -32,11 +30,9 @@ import {
     GitHub,
     EmojiPeople, 
     Code, 
-    Edit,
     AlternateEmail,
     ArrowUpward,
     Article,
-    School,
     Close
  } from '@mui/icons-material';
 
@@ -46,8 +42,6 @@ import projects from "../projects"
 const MainComponent = () => {
     const [aboutOpen, setAboutOpen] = useState(false)
     const [projectOpen, setProjectOpen] = useState(false)
-    const [editedOpen, setEditedOpen] = useState(false)
-    const [certOpen, setCertOpen] = useState(false)
     const [imageOpen, setImageOpen] = useState(false)
     const [selectedImage, setSelectedImage] = useState("")
 
@@ -366,68 +360,6 @@ const MainComponent = () => {
                 </IconButton>
                 <img src={selectedImage} alt="" className="modal-img" />
             </Dialog>
-
-            <Button 
-                variant="contained" 
-                onClick={() => setCertOpen(!certOpen)} 
-                className="btn btn-wide mb-2"
-                endIcon={<School />}
-            >
-                Certificates
-            </Button>
-
-            <Collapse in={certOpen} timeout={{enter: 3000, exit: 1000}}>
-                <Paper className="container gradient p-3 my-3 mb-2" elevation={1}>
-                    <div className="row mx-auto">
-                        <div className="col mx-auto">
-                            <Slide in={certOpen} timeout={3500} direction="up">
-                                <img 
-                                    src={honors} 
-                                    alt="honors certificate" 
-                                    height="250" 
-                                    className="rounded m-2 shadow" 
-                                    onClick={() => {
-                                        setSelectedImage(honors)
-                                        setImageOpen(!imageOpen)
-                                    }}
-                                />
-                            </Slide>
-                            <Slide in={certOpen} timeout={4000} direction="up">
-                                <img 
-                                    src={frontend} 
-                                    alt="front end development certificate" 
-                                    height="250" 
-                                    className="rounded m-2 shadow" 
-                                    onClick={() => {
-                                        setSelectedImage(frontend)
-                                        setImageOpen(!imageOpen)
-                                    }}
-                                />
-                            </Slide>
-                            <Slide in={certOpen} timeout={4000} direction="up">
-                                <img 
-                                    src={scrimba} 
-                                    alt="front end development certificate" 
-                                    height="250" 
-                                    className="scrimba rounded m-2 shadow mx-auto" 
-                                    onClick={() => {
-                                        setSelectedImage(scrimba)
-                                        setImageOpen(!imageOpen)
-                                    }}
-                                />
-                            </Slide>
-                        </div>
-                    </div>
-                    <Button 
-                        endIcon={<ArrowUpward />}
-                        className="my-3 btn-up text-dark" 
-                        onClick={() => setCertOpen(!certOpen)}
-                    >
-                        <p className="text-dark my-auto">Back up</p>
-                    </Button>
-                </Paper>
-            </Collapse>
-
         </div>
     )
 }
