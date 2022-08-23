@@ -1,12 +1,12 @@
 import React, {useState} from "react"
 
 import ListOfTech from "./ListOfTechComponent"
-import resume from "../images/AndrewSutton-Resume.pdf"
+import resume from "../images/Abubakar's Resume.pdf"
 
 // import honors from "../images/HonorsCertificate.png"
 // import frontend from "../images/FrontEnd.png"
 // import scrimba from "../images/ScrimbaCert.png"
-import resumeImg from "../images/AndrewSuttonResume.png"
+import resumeImg from "../images/Abubakar's Resume.jpeg"
 import me from "../images/me.jpeg"
 // import album from "../images/gallery/Album.jpg"
 // import marble from "../images/gallery/Marble.jpg"
@@ -20,30 +20,30 @@ import {
     Collapse,
     Paper,
     Button,
-    Dialog,
+    //Dialog,
     Slide,
-    IconButton
+    //IconButton
  } from '@mui/material'
 
 import {
     LinkedIn,
     GitHub,
     EmojiPeople, 
-    Code, 
+    //Code, 
     AlternateEmail,
     ArrowUpward,
     Article,
-    Close
+    //Close
  } from '@mui/icons-material';
 
-import projects from "../projects"
+//import projects from "../projects"
 
 
 const MainComponent = () => {
     const [aboutOpen, setAboutOpen] = useState(false)
-    const [projectOpen, setProjectOpen] = useState(false)
+    //const [projectOpen, setProjectOpen] = useState(false)
     const [imageOpen, setImageOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState("")
+    const [setSelectedImage] = useState("")
 
     return (
         <div className="text-center">
@@ -83,7 +83,7 @@ const MainComponent = () => {
                                     variant="contained" 
                                     className="btn m-1" 
                                     sx={{borderRadius: "20px"}}
-                                    onClick={() => window.open("https://www.linkedin.com/in/andrew-sutton-aa3326205/")}
+                                    onClick={() => window.open("https://www.linkedin.com/in/abubakar-lawal-b6478219b/")}
                                 >
                                     <LinkedIn />
                                 </Button>
@@ -91,7 +91,7 @@ const MainComponent = () => {
                                     variant="contained" 
                                     className="btn m-1" 
                                     sx={{borderRadius: "20px"}}
-                                    onClick={() => window.open("https://github.com/sydsutton")}
+                                    onClick={() => window.open("https://github.com/asgalad")}
                                 >
                                     <GitHub />
                                 </Button>
@@ -99,7 +99,7 @@ const MainComponent = () => {
                                     variant="contained"
                                     className="btn m-1" 
                                     sx={{borderRadius: "20px"}}
-                                    onClick={() => window.open('mailto:andrewsydsutton@gmail.com')}
+                                    onClick={() => window.open('abbakarhaneef@gmail.com')}
                                 >
                                     <AlternateEmail />
                                 </Button>
@@ -211,7 +211,7 @@ const MainComponent = () => {
                 </Paper>
             </Collapse>
 
-            <Button 
+            {/* <Button 
                 variant="contained" 
                 onClick={() => setProjectOpen(!projectOpen)} 
                 className="btn btn-wide mb-2"
@@ -359,7 +359,7 @@ const MainComponent = () => {
                     <Close />
                 </IconButton>
                 <img src={selectedImage} alt="" className="modal-img" />
-            </Dialog>
+            </Dialog> */}
         </div>
     )
 }
