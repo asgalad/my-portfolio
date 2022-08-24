@@ -20,9 +20,9 @@ import {
     Collapse,
     Paper,
     Button,
-    //Dialog,
+    Dialog,
     Slide,
-    //IconButton
+    IconButton
  } from '@mui/material'
 
 import {
@@ -33,7 +33,7 @@ import {
     AlternateEmail,
     ArrowUpward,
     Article,
-    //Close
+    Close
  } from '@mui/icons-material';
 
 import projects from "../projects"
@@ -43,7 +43,7 @@ const MainComponent = () => {
     const [aboutOpen, setAboutOpen] = useState(false)
     const [projectOpen, setProjectOpen] = useState(false)
     const [imageOpen, setImageOpen] = useState(false)
-    const [setSelectedImage] = useState("")
+    const [selectedImage, setSelectedImage] = useState("")
 
     return (
         <div className="text-center">
