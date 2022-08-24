@@ -12,7 +12,7 @@ const projects = [
         title: "Kannywood Db",
         img: `${kannywooddb}`,
         alt: "A Movie web application",
-        description: "The official site of the band 'Soul You Know'. It has a working mailing list submission form and a contact form that goes directly to the band's email.",
+        description: "A movie Database for Kannywood industry which is the second largest in Nigeria after Nolloywood.",
         tech: [
             "Javascript",
             "Vue JS",
