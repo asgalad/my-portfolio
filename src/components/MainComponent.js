@@ -341,7 +341,7 @@ const MainComponent = () => {
                     </Paper>
             </Collapse>
 
-            {/* <Dialog 
+            <Dialog 
                 open={imageOpen} 
                 fullWidth={true} 
                 maxWidth={"sm"} 
@@ -359,7 +359,7 @@ const MainComponent = () => {
                     <Close />
                 </IconButton>
                 <img src={selectedImage} alt="" className="modal-img" />
-            </Dialog> */}
+            </Dialog>
         </div>
     )
 }
