@@ -29,19 +29,19 @@ import {
     LinkedIn,
     GitHub,
     EmojiPeople, 
-    //Code, 
+    Code, 
     AlternateEmail,
     ArrowUpward,
     Article,
     //Close
  } from '@mui/icons-material';
 
-//import projects from "../projects"
+import projects from "../projects"
 
 
 const MainComponent = () => {
     const [aboutOpen, setAboutOpen] = useState(false)
-    //const [projectOpen, setProjectOpen] = useState(false)
+    const [projectOpen, setProjectOpen] = useState(false)
     const [imageOpen, setImageOpen] = useState(false)
     const [setSelectedImage] = useState("")
 
@@ -211,7 +211,7 @@ const MainComponent = () => {
                 </Paper>
             </Collapse>
 
-            {/* <Button 
+            <Button 
                 variant="contained" 
                 onClick={() => setProjectOpen(!projectOpen)} 
                 className="btn btn-wide mb-2"
@@ -315,12 +315,12 @@ const MainComponent = () => {
                                                         null
                                                         }
                                                         <Button 
-                                                            onClick={() => window.open(`${project.repo}`)} 
+                                                            disabled
                                                             variant="contained" 
                                                             className="btn"
                                                             size="small"
                                                         >
-                                                            code
+                                                            Private
                                                         </Button>
                                                     </div>
                                             </div>
@@ -341,7 +341,7 @@ const MainComponent = () => {
                     </Paper>
             </Collapse>
 
-            <Dialog 
+            {/* <Dialog 
                 open={imageOpen} 
                 fullWidth={true} 
                 maxWidth={"sm"} 

@@ -5,36 +5,38 @@
 // import weather from "./images/weather.png"
 // import newz from "./images/newz.PNG"
 // import sthetik from "./images/sthetik.PNG"
-// import syk from "./images/syk.PNG"
+ import kannywooddb from "./images/kannywooddb.png"
 
-// const projects = [
-//     {
-//         title: "Band Website",
-//         img: `${syk}`,
-//         alt: "A band website",
-//         description: "The official site of the band 'Soul You Know'. It has a working mailing list submission form and a contact form that goes directly to the band's email.",
-//         tech: [
-//             "Javascript",
-//             "React JS",
-//             "Semantic UI",
-//             "SCSS",
-//             "Session Storage",
-//             "React Router",
-//             "Adobe Photoshop",
-//             "Email JS",
-//             "Mailchimp JS"
-//         ],
-//         problem: [
-//             "I wanted the mailing list form to pop up only once per site visit instead of every time a page loads",
-//             "I needed a way to search for photos based on the 'type' of photo (live shows, album art, etc.)",
-//         ],
-//         solution: [
-//             "I accessed session storage and set a 'timeout' function so that the form pops up once after 4 seconds of your first site visit",
-//             "I saved all of the photos in an array with a 'type' key in order to filter through the photos based on the type selected on the page",
-//         ],
-//         repo: "https://github.com/sydsutton/soul-you-know",
-//         live: "https://soulyouknowband.com"
-//     },
+const projects = [
+    {
+        title: "Kannywood Db",
+        img: `${kannywooddb}`,
+        alt: "A Movie web application",
+        description: "The official site of the band 'Soul You Know'. It has a working mailing list submission form and a contact form that goes directly to the band's email.",
+        tech: [
+            "Javascript",
+            "Vue JS",
+            "Vue Router",
+            "Vuex",
+            "Vuetify JS",
+            "Local Storage",
+            "Node JS",
+            "Express JS",
+            "Json webtoken",
+            "Mongodb",
+            "mongoose"
+        ],
+        // problem: [
+        //     "I wanted the mailing list form to pop up only once per site visit instead of every time a page loads",
+        //     "I needed a way to search for photos based on the 'type' of photo (live shows, album art, etc.)",
+        // ],
+        // solution: [
+        //     "I accessed session storage and set a 'timeout' function so that the form pops up once after 4 seconds of your first site visit",
+        //     "I saved all of the photos in an array with a 'type' key in order to filter through the photos based on the type selected on the page",
+        // ],
+        //repo: "Private",
+        live: "https://kannywood-db.netlify.app/"
+    },
 //     {
 //         title: "SThetik",
 //         img: `${sthetik}`,
@@ -179,7 +181,6 @@
 //             "Material Design"
 //         ],
 //         repo: "https://github.com/sydsutton/portfolio",
-//     },
-// ]
-
-// export default projects
+  //  },
+]
+ export default projects
